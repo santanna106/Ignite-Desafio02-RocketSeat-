@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import {useState} from 'react';
 import {Button} from './Button';
 import '../styles/sidebar.scss';
 interface Genere {
@@ -16,7 +16,7 @@ export function SideBar(props:SideBarProps) {
   
   const {genres}  = props;
   const [selectedGenreId, setSelectedGenreId] = useState(1);
-  
+
   return (
     <nav className="sidebar">
     <span>Watch<p>Me</p></span>
